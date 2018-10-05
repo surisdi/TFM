@@ -1,0 +1,45 @@
+\contentsline {chapter}{\numberline {1}Abstract}{4}
+\contentsline {chapter}{\numberline {2}Acknowledgements}{5}
+\contentsline {chapter}{\numberline {3}Introduction}{6}
+\contentsline {section}{\numberline {3.1}Motivation}{6}
+\contentsline {section}{\numberline {3.2}Notation and definitions}{8}
+\contentsline {subsection}{\numberline {3.2.1}Object detection definition}{8}
+\contentsline {subsection}{\numberline {3.2.2}Saliency definitions}{9}
+\contentsline {chapter}{\numberline {4}One Shot Training}{10}
+\contentsline {section}{\numberline {4.1}Related work: general object detections techniques}{10}
+\contentsline {subsection}{\numberline {4.1.1}Classification algorithm: Support Vector Machines}{10}
+\contentsline {subsection}{\numberline {4.1.2}Feature functions}{11}
+\contentsline {subsubsection}{Histogram Oriented Gradients}{12}
+\contentsline {subsubsection}{Convolutional Neural Networks}{13}
+\contentsline {section}{\numberline {4.2}One-Shot Training}{15}
+\contentsline {subsection}{\numberline {4.2.1}Motivation}{15}
+\contentsline {subsection}{\numberline {4.2.2}Single view example}{16}
+\contentsline {subsubsection}{Car results with HOG features: towards an object centric database}{17}
+\contentsline {subsection}{\numberline {4.2.3}Object centric database}{18}
+\contentsline {subsubsection}{Mixture training}{18}
+\contentsline {subsection}{\numberline {4.2.4}One shot training with CNN}{18}
+\contentsline {subsubsection}{New CNN trained with less categories}{19}
+\contentsline {subsubsection}{Results with CNN features and comparison}{20}
+\contentsline {subsubsection}{Performance of one-shot trained detectors}{20}
+\contentsline {subsubsection}{Viewpoint bias with CNN features}{23}
+\contentsline {subsection}{\numberline {4.2.5}Conclusions and future work}{24}
+\contentsline {section}{\numberline {4.3}DetectMe: The open object detector}{26}
+\contentsline {subsection}{\numberline {4.3.1}Introduction to DetectMe}{26}
+\contentsline {subsection}{\numberline {4.3.2}DetectMe: the application}{26}
+\contentsline {subsubsection}{Training a detector}{26}
+\contentsline {subsubsection}{Executing a detector}{27}
+\contentsline {subsubsection}{Retraining a detector}{27}
+\contentsline {subsection}{\numberline {4.3.3}DetectMe competition}{28}
+\contentsline {subsection}{\numberline {4.3.4}DetectMe as a framework}{29}
+\contentsline {subsection}{\numberline {4.3.5}Future Work}{30}
+\contentsline {chapter}{\numberline {5}Saliency}{31}
+\contentsline {section}{\numberline {5.1}Introduction to saliency}{31}
+\contentsline {section}{\numberline {5.2}Related work}{32}
+\contentsline {section}{\numberline {5.3}Deep features for saliency prediction}{34}
+\contentsline {section}{\numberline {5.4}Experimental results}{36}
+\contentsline {subsection}{\numberline {5.4.1}Low-level features}{36}
+\contentsline {subsection}{\numberline {5.4.2}Medium-level features}{37}
+\contentsline {subsection}{\numberline {5.4.3}Hight level features}{37}
+\contentsline {subsection}{\numberline {5.4.4}Global model}{38}
+\contentsline {section}{\numberline {5.5}Future Work}{39}
+\contentsline {chapter}{\numberline {6}Conclusions}{40}

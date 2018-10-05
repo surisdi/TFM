@@ -1,0 +1,12 @@
+\chapter{Conclusions and Future Work}
+
+In this project, we first introduced audio-visual ``matchmap'' neural networks which are capable of directly learning the semantic correspondences between speech frames and image pixels without the need for annotated training data in either modality. We applied these networks for semantic image/spoken caption search, speech-prompted object localization, audio-visual clustering and concept discovery, and real-time, speech-driven, semantic highlighting. We also introduced an extended version of the Places audio caption dataset~\cite{harwath_nips}, doubling the total number of captions. Additionally, we introduced nearly 10,000 captions for the ADE20k dataset. There are numerous avenues for future work, including expansion of the models to handle videos, environmental sounds, additional languages, etc. It may possible to directly generate images given a spoken description, or generate artificial speech describing a visual scene. More focused datasets that go beyond simple spoken descriptions and explicitly address relations between objects within the scene could be leveraged to learn richer linguistic representations. Finally, a crucial element of human language learning is the dialog feedback loop, and future work should investigate the addition of that mechanism to the models.
+\begin{enumerate}
+    \item \textbf{Moving  to  video}.  Expansive sources  of  video  data  exist  (YouTube,  television, movies)  that  we  would  like  to  leverage  for  larger  scale  learning.  The  video  modality may  also  enable  the  learning  of  different  concepts  compared  to  still  frames  images (e.g.  actions). In this project, we did some preliminary work on this topic, but it is still in early stages of development.
+    \item \textbf{Learning  higher  level  abstractions}.  By  framing  the  task  differently  (e.g. using  dialog  or  referential  expressions)  we  expect to  be  able  to  learn  more  abstract concepts  such  as  numbers,  relative  location,  relative  size,  etc.
+    \item \textbf{Speech  to  speech translation}.  By  collecting  multilingual  data,  we  expect  to  be  able  to  use  the  visual domain  as  a  “Rosetta  stone”  to  learn  word-level  translations
+\end{enumerate}
+
+After that, we decided to simplify the problem and go back to the basics...
+
+The main conclusions from this section are that ...

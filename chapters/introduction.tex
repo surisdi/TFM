@@ -1,0 +1,65 @@
+\chapter{Introduction}
+\label{chapter:introduction}
+
+Computer vision has seen a dramatic improvement over the last years, mainly because of the deep learning explosion, powered by huge amounts of data and great computing capabilities. This change of paradigm implies that computer vision researchers have to change the way they approach problems. One of these 
+
+\section{Motivation}
+\label{section:motivation}
+
+In a simplified way, neural networks (and machine learning systems in general) compute an output as a function of the input data. This output is the result to a specific task we want to solve, and the goal of machine learning algorithms is to compute the function that obtains the output from the input data. In the deep learning case, this function is controlled by a huge number of parameters, of the order of millions or hundreds of millions. 
+
+When a high level task is to be solved, neural networks need to create a complex enough function so that it can correctly represent the different knowledge... . Consider for example an action recognition task, where we want a system to classify the action being pictured in an image or video as \textit{hand shaking}, \textit{kissing} or \textit{hugging}. Identifying a person in the image (a difficult task by itself) is not enough, the network has to \textbf{know somehow} what a person is (to separate the two persons in the actions), what a lip, hand and arm is, and then at a higher level it has to identify when these parts of the body are closer or in a certain position to determine what action is taking place. All this for all kinds of people, positions, sizes... 
+
+This "know somehow" is what the \textit{interpretability} field is interested on. Some work has been done in the last years from different points of view, as explained in the related work section.
+
+However, in the previous example we are strictly imposing the possibilities. We are telling the network (via examples) what a kiss (or lots of kisses) looks like, what a hug looks like, etc. And we are labeling those concepts, we are telling the network which are the concepts it has to learn. Thus, when we analyze the interpretability of the network, we will find that the concepts it contains are precisely those we asked it to contain, and maybe some auxiliary ones. 
+
+In contrast, baby humans learn from unstructured data and stimuli, by correlating what they see with what they hear, what they feel, etc. This unstructured information forces them to learn hundreds of different concepts to be able to relate all these different stimuli, they need to create an abstract representation under which all this information makes sense. The concepts are not given to them in a finite list.
+
+The best way to replicate this human behaviour is, then, to study neural networks in an \hyperref[def:supervised]{unsupervised} fashion, where the representations they create do not depend on the specific way humans label images or cluster concepts. This way, neural networks can decide how to structure the concepts they perceive in the images, and this structure does not come from the implicit or explicit biases we introduce to the datasets when we create them.
+
+Thus, the motivation of this work is to understand how concepts emerge in neural networks. This implies studying how a concept can be defined, how can we force the network to learn more or better (clearer) concepts, and how they can be represented. This is done under different scenarios.
+
+First, we study the problem of understanding how can neural networks replicate the way babies learn to associate speech and vision, and the concepts that indirectly appear from this association. We realize that indeed the network learns concepts, as it is necessary for the task, and present different analysis that show it. This is studied in \autoref{chapter:starting_point}.
+
+Then, we realize that we cannot really advance on the topic if we do not attack the root problem. Thus, we do an extensive analysis on a much simpler and controlled dataset, and provide psychological and phylosophical analysis on the problem. This is studied in \autoref{chapter:back_to_basics}
+
+After that, we study how can we represent concepts in a more elegant way
+
+GANs
+
+
+
+
+\newpage
+\section{Notation and definitions}
+\label{section:notation}
+
+After having presented the scope of this work and before entering to its content, we believe it would be useful to get the reader familiar with some technical definitions that will appear in the whole document. 
+
+\begin{definition}
+\label{def:supervised}
+We say a machine learning task is \textbf{supervised} when it consists in learning a function that maps an input to an output based on given input-output pairs. Conversely, \textbf{unsupervised learning} implies unlabeled data, and the task consists in inferring the structure of the data. \textbf{Weakly supervised} is a supervised learning in which the amount of data is very limited, or the labels are obtained indirectly from other supervised labels. 
+\end{definition}
+
+\begin{definition}
+\label{def:high_level}
+We say a task is a \textbf{high level} task, as opposed to a \textbf{low level} task, when more semantic information and abstraction is needed, and using pixel-level information is not enough.
+\end{definition}
+
+\begin{definition}
+\label{def:recall}
+We define \textbf{recall ($R$)} as the ratio of the successfully retrieved examples to all the positive examples. In our case, when we want to retrieve an audio from an image (or vice versa), we rank all the audios according to the similarity value, and select the one with the highest value. If the selected example is the correct one, we count it as a success. Thus, the recall is defined as 
+\begin{equation}
+R = \frac{\text{\# successful examples}}{\text{\# total examples}}.
+\end{equation}
+We define {recall at K ($R@K$)} as the ratio of the successes to the total number of examples, when we consider a success the presence of the correct example among the top K values in the ranking.
+\end{definition}
+
+\begin{definition}
+\label{def:clustering}
+We define \textbf{clustering} as the task of grouping data points in groups or classes, such that the elements in a certain group are closer (in some sense or metric) among them than to the elements of the other groups. Each one of these groups is called \textbf{cluster}.
+\end{definition}
+
+
+

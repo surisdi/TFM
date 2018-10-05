@@ -1,0 +1,121 @@
+\PassOptionsToPackage{utf8}{inputenc}
+  \usepackage{inputenc}
+% **********************************************************************
+% Personal data and user ad-hoc commands
+% **********************************************************************
+\newcommand{\myTitle}{How Concepts Emerge in Neural Networks\xspace}
+\newcommand{\mySubtitle}{What are the networks really learning\xspace}
+\newcommand{\myDegree}{Master's degree in Telecommunications Engineering (MET)\xspace}
+\newcommand{\myName}{Dídac Surís Coll-Vinent\xspace}
+\newcommand{\myProf}{Xavier Giró i Nieto\xspace}
+\newcommand{\myOtherProf}{Put name here\xspace}
+\newcommand{\mySupervisor}{Antonio Torralba\xspace}
+\newcommand{\myFaculty}{Put data here\xspace}
+\newcommand{\myDepartment}{Computer Sciene And Artificial Intelligence (CSAIL)\xspace}
+\newcommand{\myUni}{Universitat Politècnica de Catalunya (UPC) - Massachusetts Institute of Technology (MIT)\xspace}
+\newcommand{\myLocation}{Cambridge, MA, USA\xspace}
+\newcommand{\myTime}{October 2018\xspace}
+\newcommand{\myVersion}{version 1.0}
+
+% ********************************************************************
+% Setup, finetuning, and useful commands
+% ********************************************************************
+\newcounter{dummy} % necessary for correct hyperlinks (to index, bib, etc.)
+\newlength{\abcd} % for ab..z string length calculation
+\providecommand{\mLyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+\newcommand{\ie}{i.\,e.}
+\newcommand{\Ie}{I.\,e.}
+\newcommand{\eg}{e.\,g.}
+\newcommand{\Eg}{E.\,g.}
+
+\usepackage{textcase}
+\usepackage{microtype}
+\usepackage[capitalize,noabbrev]{cleveref}
+\DeclareRobustCommand{\spacedlowsmallcaps}[1]{%
+  \textsc{\let\crefuc\scshape\MakeTextLowercase{#1}}%
+}
+
+% ********************************************************************
+% General useful packages
+% ********************************************************************
+\usepackage{hyperref, bookmark}
+\usepackage{fontenc}
+\usepackage{amsmath}
+\usepackage{textcomp} % fix warning with missing font shapes
+\usepackage{scrhack} % fix warnings when using KOMA with listings package
+\usepackage{xspace} % to get the spacing after macros right
+\usepackage{mparhack} % get marginpar right
+%\usepackage{fixltx2e} % fixes some LaTeX stuff --> since 2015 in the LaTeX kernel (see below)
+% \usepackage[latest]{latexrelease} % emulate newer kernel version if older is detected
+\PassOptionsToPackage{printonlyused,smaller}{acronym}
+  \usepackage{acronym} % nice macros for handling all acronyms in the 
+  \def\bflabel#1{{\acsfont{#1}\hfill}}
+  \def\aclabelfont#1{\acsfont{#1}}
+
+% ***********************************************************************
+% Setup floats: tables, (sub)figures, and captions
+% ***********************************************************************
+\usepackage{tabularx} % better tables
+  \setlength{\extrarowheight}{3pt} % increase table row height
+\newcommand{\tableheadline}[1]{\multicolumn{1}{c}{\spacedlowsmallcaps{#1}}}
+\newcommand{\myfloatalign}{\centering} % to be used with each float for alignment
+\usepackage{caption}
+\captionsetup{font=small} % format=hang,
+
+
+% Packages
+
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+
+
+\usepackage{xcolor}
+
+\newlength \longest
+
+\usepackage{graphicx} %multiple figures
+\usepackage{caption}
+%\usepackage{subcaption}
+\usepackage{amsfonts}
+\usepackage[autostyle]{csquotes}
+\usepackage{wrapfig}
+\usepackage{subfig}
+%\usepackage{subfigure}
+\usepackage{booktabs, multirow, tabularx}
+\usepackage{graphicx}% http://ctan.org/pkg/graphicx
+\usepackage{array}% http://ctan.org/pkg/array
+\usepackage[stable]{footmisc}
+\usepackage{cellspace}
+
+%\setcounter{secnumdepth}{3}
+%\setcounter{tocdepth}{3}
+
+%% Theorem
+\usepackage{amsthm}
+\newtheorem{definition}{Definition}
+
+
+\usepackage{titlesec}
+\titleformat{\chapter}[block]{\normalfont\huge\bfseries}{\thechapter.}{1em}{\Huge}
+%\titleformat{\chapter}{\normalfont\huge}{\thechapter.}{20pt}{\huge\it}
+
+ 
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=24mm,
+ right=27mm,
+ top=28mm,
+ bottom=25mm,
+ }
+ 
+ \newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+ \newcommand{\makecell}[2][@{}c@{}]{\begin{tabular}{#1}#2\end{tabular}}
+
+

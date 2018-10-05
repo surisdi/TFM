@@ -1,0 +1,27 @@
+\chapter{Related Work}
+\label{chapter:related_work}
+
+This project covers different topics related to deep learning. A breif summary of previous work on each of these topics is described in the following lines.
+
+\section{Related to multimodal matching of speech and images}
+\textbf{Visual Object Recognition and Discovery.} 
+%Classification of visual objects (or other patterns) is a longstanding problem within the computer vision community, with the MNIST~\cite{mnist} handwritten digit task being a classic and widely known example. Recent progress in the field has been driven in part by recurring challenge competitions such as ISLVRC~\cite{ILSVRC15}. Since 2012, the task has been dominated by deep convolutional neural networks (CNNs), popularized by Krizhevsky \etal~\cite{alexnet}. Since that time, improved variants of the basic CNN architecture have continued to push the state of the art \cite{resnet, vgg}. While classification asks the question of ``what'', object detection and localization (also part of the ISLVRC suite of tasks) address the problem of ``where''. 
+State of the art systems are trained using bounding box annotations for the training data \cite{girshick_2013,yolo}, however other works investigate weakly-supervised or unsupervised object localization \cite{bergamo_2014,cho_2015,cinbis_2016,zhou_2015}. A large body of research has also focused on unsupervised visual object discovery, in which case there is no labeled training dataset available. One of the first works within this realm is \cite{weber_2000}, which utilized an iterative clustering and classification algorithm to discover object categories. Further works borrowed ideas from textual topic models \cite{russell_2006}, assuming that certain sets of objects generally appear together in the same image scene. More recently, CNNs have been adapted to this task \cite{doersch_2015,guerin_2017}, for example by learning to associate image patches which commonly appear adjacent to one another. 
+
+\textbf{Unsupervised Speech Processing.} Automatic speech recognition (ASR) systems %have a long history and 
+have recently made great strides thanks to the revival of deep neural networks. 
+%The technology is now close to reaching human parity within certain language and domains \cite{xiong_2016}. However, this performance comes at an enormous cost. 
+Training a state-of-the-art ASR system requires thousands of hours of transcribed speech audio, along with expert-crafted pronunciation lexicons and text corpora covering millions, if not billions of words for language model training. The reliance on expensive, highly supervised training paradigms has restricted the application of ASR to the major languages of the world, accounting for a small fraction of the more than 7,000 human languages spoken worldwide ~\cite{ethnologue}. Within the speech community, there is a continuing effort to develop algorithms less reliant on transcription and other forms of supervision. Generally, these take the form of segmentation and clustering algorithms whose goal is to divide a collection of spoken utterances at the boundaries of phones or words, and then group together segments which capture the same underlying unit. Popular approaches are based on dynamic time warping~\cite{park_glass_sdtw,jansen_2010,jansen_2011}, or Bayesian generative models of the speech signal~\cite{lee_glass_2012,but_2016,kamper_2016}. Neural networks have thus far been mostly utilized in this realm for learning frame-level acoustic features~\cite{zhang_2012,renshaw_2015,kamper_2015,thiolliere_2015}.
+
+\textbf{Fusion of Vision and Language.} Joint modeling of images and natural language text has gained rapidly in popularity, encompassing tasks such as image captioning~\cite{karpathy_2015,vinyals_2015,fang_2015,xu_2015,densecap}, visual question answering (VQA)~\cite{antol_2015,malinowski_2014,malinowski_2015,gao_2015,ren_2015}, multimodal dialog~\cite{guess_what}, and text-to-image generation~\cite{reed_2016}. While most work has focused on representing natural language with text, there are a growing number of papers attempting to learn directly from the speech signal. A major early effort in this vein was the work of Roy~\cite{roy_2002,roy_2003}, who learned correspondences between images of objects and the outputs of a supervised phoneme recognizer. Recently, it was demonstrated by Harwath et al ~\cite{harwath_nips} that semantic correspondences could be learned between images and speech waveforms at the signal level, with subsequent works providing evidence that linguistic units approximating phonemes and words are implicitly learned by these models~\cite{harwath_acl_2017,drexler_2017,chrupala_2017,alishahi_2017,kamper_2017}. This paper follows in the same line of research, introducing the idea of ``matchmap'' networks which are capable of directly inferring semantic alignments between acoustic frames and image pixels.
+
+\textbf{Fusion of Vision and Sounds.} 
+A number of recent models have focused on integrating other acoustic signals to perform unsupervised discovery of objects and ambient sounds~\cite{Owens16,Owens2016b,NIPS2016_6146,look_listen_learn}. Our work concentrates on speech and word discovery. But combining both types of signals (speech and ambient sounds) opens a number of opportunities for future research beyond the scope of this paper.
+
+\section{On the meaning of learning}
+MEncionar articles psicologics
+
+\section{Network Interpretability}
+
+\section{GAN?}
+
